@@ -4,11 +4,13 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>413120e2-d3b7-4611-8c6b-820901711cae</UserSecretsId>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+
   <ItemGroup>
     <None Remove="Views\Events\" />
     <None Remove="ViewModels\" />
@@ -17,11 +19,13 @@
     <None Remove="Pomelo.EntityFrameworkCore.MySql" />
     <None Remove="Views\EventCategory\" />
   </ItemGroup>
+
   <ItemGroup>
     <Folder Include="Views\Events\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Views\EventCategory\" />
   </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.4">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -30,4 +34,5 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.4" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
   </ItemGroup>
+
 </Project>
